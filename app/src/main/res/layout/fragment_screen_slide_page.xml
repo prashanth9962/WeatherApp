@@ -21,15 +21,6 @@
                  android:id="@+id/WeatherIcon"
                  android:text="IMAGE"/>
 
-             <!--<View
-                 android:layout_width="1dp"
-                 android:layout_height="wrap_content"
-                 android:background="@android:color/darker_gray"
-                 android:layout_alignParentTop="true"
-                 android:layout_toRightOf="@+id/WeatherIcon"
-                 android:layout_toEndOf="@+id/WeatherIcon"
-                 android:layout_marginLeft="18dp"
-                 android:layout_marginStart="18dp" />-->
 
              <TextView
                  android:layout_width="wrap_content"
@@ -57,16 +48,23 @@
                 android:textColor="@color/white"
                 android:textSize="25dp"
                 android:id="@+id/textView" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="July 10"
                 android:textColor="@color/white"
                 android:id="@+id/date"
-                android:layout_below="@+id/textView"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_below="@+id/textView" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:id="@+id/horizontalBar"
+                android:background="@android:color/darker_gray"
+                android:layout_above="@+id/date"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,19 +73,19 @@
                 android:textColor="@color/white"
                 android:id="@+id/highTemp"
                 android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_toRightOf="@+id/horizontalBar"
+                android:layout_toEndOf="@+id/horizontalBar" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="28"
                 android:textSize="25dp"
                 android:textColor="@color/white"
-                android:id="@+id/lowTemp"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/textView"
-                android:layout_toEndOf="@+id/textView"
-                android:layout_marginLeft="74dp"
-                android:layout_marginStart="74dp" />
+                android:layout_below="@+id/highTemp"
+                android:layout_toRightOf="@+id/horizontalBar"
+                android:layout_toEndOf="@+id/horizontalBar"
+                android:id="@+id/lowTemp" />
 
             </RelativeLayout>
         </RelativeLayout>
