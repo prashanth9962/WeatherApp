@@ -13,6 +13,10 @@
             <!-- Support library compatibility -->
             <item name="windowActionBarOverlay">true</item>
         </style>
+    <style name="Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">100dp</item>
 
+    </style>
 
 </resources>
